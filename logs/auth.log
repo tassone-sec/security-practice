@@ -1,0 +1,16 @@
+Failed login attempt - user: admin
+Successful login - user: vboxuser
+Failed login attempt - user: admin
+Failed login attempt - user: root
+Unauthorized access detected - ip: 192.168.1.105
+Failed login attempt - user: admin
+Successful login - user: vboxuser
+Failed login attempt - user: root
+Failed authentication - user: admin
+Connection timeout - ip: 192.168.1.105
+Failed login attempt - user: admin
+Successful login - user: vboxuser
+Unauthorized access detected - ip: 192.168.1.199
+Failed login attempt - user: root
+Failed authentication - user: admin
+New suspicious entry - ip: 10.10.10.10

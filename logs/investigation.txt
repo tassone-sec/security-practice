@@ -1,0 +1,6 @@
+../logs/sorted_auth.log:Successful login - user: vboxuser
+../logs/sorted_auth.log:Successful login - user: vboxuser
+../logs/sorted_auth.log:Successful login - user: vboxuser
+../logs/auth.log:Successful login - user: vboxuser
+../logs/auth.log:Successful login - user: vboxuser
+../logs/auth.log:Successful login - user: vboxuser

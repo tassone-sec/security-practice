@@ -1,0 +1,21 @@
+../logs/sorted_auth.log:Failed authentication - user: admin
+../logs/sorted_auth.log:Failed authentication - user: admin
+../logs/sorted_auth.log:Failed login attempt - user: admin
+../logs/sorted_auth.log:Failed login attempt - user: admin
+../logs/sorted_auth.log:Failed login attempt - user: admin
+../logs/sorted_auth.log:Failed login attempt - user: admin
+../logs/sorted_auth.log:Failed login attempt - user: root
+../logs/sorted_auth.log:Failed login attempt - user: root
+../logs/sorted_auth.log:Failed login attempt - user: root
+../logs/log2.txt:Failed authentication
+../logs/log1.txt:Failed login attempt
+../logs/log3.txt:Failed login attempt
+../logs/auth.log:Failed login attempt - user: admin
+../logs/auth.log:Failed login attempt - user: admin
+../logs/auth.log:Failed login attempt - user: root
+../logs/auth.log:Failed login attempt - user: admin
+../logs/auth.log:Failed login attempt - user: root
+../logs/auth.log:Failed authentication - user: admin
+../logs/auth.log:Failed login attempt - user: admin
+../logs/auth.log:Failed login attempt - user: root
+../logs/auth.log:Failed authentication - user: admin

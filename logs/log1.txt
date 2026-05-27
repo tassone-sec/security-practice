@@ -1,0 +1,3 @@
+Failed login attempt
+Server error detected
+Unauthorized access detected

@@ -1,0 +1,3 @@
+Unauthorized access detected
+Normal operation
+Failed login attempt

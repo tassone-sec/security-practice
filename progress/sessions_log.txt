@@ -1,0 +1,221 @@
+CLOUD SECURITY ENGINEERING - PROGRESS LOG
+Student: Giuseppe Tassone
+Started: May 2026
+
+=== CURRENT STATUS ===
+Phase: 4 - Git & GitHub
+Status: Not Started
+
+=== COMPLETED PHASES ===
+
+--- PHASE 1 - Linux Foundations --- COMPLETE ---
+Exam Score: 123/130 — Grade A — 94.6%
+Exam Date: May 19 2026
+
+Topics completed:
+- Terminal navigation (pwd, cd, ls)
+- File management (touch, nano, cp, mv, rm)
+- Directory structure (mkdir)
+- Wildcards and pattern matching
+- Hidden files (ls -a)
+- Searching filesystem (find)
+- Searching inside files (grep)
+- Pipes and xargs (find | xargs grep)
+- Reading file contents (cat)
+- Basic permissions (reading rwx strings)
+- sudo basics
+- Permission strings in depth (all 4 parts)
+- File type character (- for file, d for directory)
+- ls -l long format output (permissions, ownership, size, timestamp)
+- chmod symbolic mode (u/g/o/a with +/-)
+- chmod octal mode (644, 755, 600, 740 etc)
+- chown concept (ownership vs permissions)
+- Reading ls -l output as a security investigation tool
+
+Weak point to review:
+- chmod vs chown definitions — know the distinction clearly
+
+--- PHASE 2 - Linux System Operations --- COMPLETE ---
+Exam Score: 126/130 — Grade A — 96.9%
+Exam Date: May 21 2026
+
+Topics completed:
+- ps — current terminal processes
+- ps aux — all system processes
+- ps aux | grep name — find specific process
+- top — live process dashboard
+- htop — advanced process monitor
+- kill PID — SIGTERM graceful termination
+- kill -9 PID — SIGKILL forced termination
+- kill PID1 PID2 PID3 — kill multiple processes at once
+- killall name — kill all processes by name
+- Background processes with &
+- sudo apt update — refresh package list
+- sudo apt install — install software
+- sudo apt remove — remove software
+- apt list --installed — view all installed packages
+- apt list --installed | grep name — find specific package
+- env — view all environment variables
+- echo $VARIABLE — retrieve variable value
+- $HOME, $USER, $SHELL, $PATH explained
+- PATH hijacking concept
+- export NAME="value" — create temporary variable
+- .bashrc — permanent configuration file
+- Permanent environment variables via .bashrc
+- history — view command history
+- .bash_history — permanent history file on disk
+- history -c — clear in-memory history
+- whoami — confirm current user
+- Tab completion — auto complete commands and filenames
+- CTRL + C — cancel running command
+- Aliases — custom command shortcuts
+- Shell behavior and bash basics
+- cron — scheduled task manager
+- Cryptojacking awareness
+
+--- PHASE 3 - File Operations & Text Processing --- COMPLETE ---
+Exam Score: 128/130 — Grade A+ — 98.5%
+Exam Date: May 25 2026
+
+Topics completed:
+- head — show first 10 lines of a file
+- head -n X — show first X lines
+- tail — show last 10 lines of a file
+- tail -n X — show last X lines
+- tail -f — live follow mode, real time log monitoring
+- sort — sort lines alphabetically
+- sort -rn — sort numerically, highest first
+- uniq — remove duplicate lines
+- uniq -c — count occurrences of each line
+- sort | uniq -c | sort -rn — full threat ranking pipeline
+- wc — count lines, words, bytes
+- wc -l — count lines only
+- > — redirect output, overwrites file
+- >> — redirect output, appends to file
+- grep | wc -l — count matching lines
+- Saving command output to files
+- Log analysis workflows
+- Identifying brute force patterns in logs
+- Distributed brute force pattern recognition
+- Evidence preservation before termination
+- Timestamped evidence file creation
+
+--- LINUX MASTER EXAM --- COMPLETE ---
+Exam Score: 228/230 — Grade A+ — 99.1%
+Exam Date: May 27 2026
+Covered: All Phase 1, 2 and 3 material
+Notable: Perfect practical section, perfect scenario section Q2
+
+=== EXAM HISTORY ===
+Phase 1 Exam — 123/130 — Grade A — 94.6% — May 19 2026
+Phase 2 Exam — 126/130 — Grade A+ — 96.9% — May 21 2026
+Phase 3 Exam — 128/130 — Grade A+ — 98.5% — May 25 2026
+Linux Master Exam — 228/230 — Grade A+ — 99.1% — May 27 2026
+Overall Average — 96.9% — Grade A+
+
+=== TRYHACKME ===
+Status: UNLOCKED — begin after Phase 4 Git setup
+Starting rooms:
+- Linux Fundamentals Part 1, 2 and 3
+- Pre-Security path
+- SOC Level 1 path (Phase 7-8)
+- HackTheBox (Phase 9)
+- Bug bounty platforms (Phase 9)
+
+=== CERTIFICATION ROADMAP ===
+Target 1: AZ-900 — Azure Fundamentals (~Month 4-5)
+Target 2: SC-900 — Security Fundamentals (~Month 5-6)
+Target 3: CompTIA Security+ (~Month 8-9)
+Target 4: AZ-500 — Azure Security Engineer (~Month 12+)
+
+=== JOB TARGET ===
+Primary: Junior Cloud Administrator / Infrastructure Analyst
+Secondary: SOC Analyst Tier 1
+Timeline: Month 4-6 with AZ-900 + GitHub portfolio
+Location: Toronto/GTA — strong cloud security market
+
+=== ENVIRONMENT ===
+OS: Ubuntu via Oracle VirtualBox
+Working directory: ~/security_practice
+Structure: logs/ and configs/ subfolders
+Progress log: ~/security_practice/progress/session_log.txt
+
+=== NOTES FOR CLAUDE ===
+- Teaching style: ask before telling, predict before running
+- Use trades analogies (plumbing, HVAC, gas)
+- Connect everything to real security work
+- Depth over speed always
+- Integrate TryHackMe and labs when topics are solid enough
+- Add real world context to every command learned
+
+=== SESSION LOG ===
+
+Session 2 — May 18 2026
+- Permission strings in depth (all 4 parts)
+- File type character (- for file, d for directory)
+- ls -l long format output
+- Reading real permission strings on own files
+- Owner and group columns in ls -l output
+
+Session 3 — May 19 2026
+- File size column in ls -l
+- chmod symbolic mode
+- chmod octal mode
+- Breaking and fixing permissions deliberately
+- chown concept and difference from chmod
+
+Session 4 — May 19 2026
+- Phase 1 Exam — 123/130 Grade A
+- ls -l timestamp and file size as investigation tools
+- Root ownership as a red flag on compromised systems
+
+Session 5 — May 20 2026
+- ps, ps aux, top, htop
+- kill, kill -9, killall
+- Background processes with &
+- sudo apt update, install, remove
+- apt list --installed
+- Environment variables (env, echo, export)
+- $PATH and PATH hijacking
+- .bashrc permanent configuration
+- history, .bash_history, whoami
+- Tab completion, CTRL+C, aliases
+- Shell behavior and bash fundamentals
+
+Session 6 — May 21 2026
+- Environment variables revision and deepening
+- export and .bashrc permanent variables
+- history and .bash_history security implications
+- whoami, tab completion, CTRL+C, aliases
+- cron introduction and security relevance
+- Phase 2 Exam — 126/130 Grade A
+
+Session 7 — May 25 2026
+- head and tail — reading parts of files
+- tail -f — live log monitoring
+- sort, uniq, uniq -c — organizing and counting data
+- sort | uniq -c | sort -rn — threat ranking pipeline
+- wc and wc -l — counting lines
+- > and >> — output redirection
+- grep | wc -l — counting matching lines
+- Full log analysis workflow
+- Phase 3 Exam — 128/130 Grade A+
+
+Session 8 — May 27 2026
+- Linux Master Exam — 228/230 Grade A+
+- Financial server incident response scenario
+- Distributed brute force recognition
+- Cryptomining process identification
+- Evidence preservation workflow
+- SQL Server sa account awareness
+- TryHackMe unlocked
+- Phase 4 begins next session
+
+=== NEXT SESSION ===
+Phase 4 - Git & GitHub
+- What is version control and why it matters
+- Creating a GitHub account
+- git init, git status, git add, git commit
+- git push — publishing to GitHub
+- Portfolio creation begins
+- Every project from this point goes on GitHub

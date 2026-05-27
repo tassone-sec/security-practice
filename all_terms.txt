@@ -1,0 +1,149 @@
+Absolutely. Here's everything we've covered so far, organized by phase:
+
+---
+
+**NAVIGATION**
+
+| Command | Definition |
+|---------|------------|
+| `pwd` | Print working directory — shows your exact location in the filesystem |
+| `ls` | List contents of current directory |
+| `ls -a` | List all contents including hidden files |
+| `ls -l` | List contents in long format showing permissions, owner, size, date |
+| `ls -la` | Combines both — long format including hidden files |
+| `ls -R` | List recursively — shows everything in all subfolders |
+| `cd foldername` | Move into a specific folder |
+| `cd ~` | Go directly home from anywhere |
+| `cd ..` | Move up one directory level |
+| `clear` | Clear the terminal screen |
+
+---
+
+**FILE & FOLDER MANAGEMENT**
+
+| Command | Definition |
+|---------|------------|
+| `mkdir foldername` | Create a new directory |
+| `touch filename` | Create a new empty file |
+| `touch file1 file2` | Create multiple files at once |
+| `nano filename` | Open a file in the nano text editor |
+| `cat filename` | Display entire file contents in terminal |
+| `cp file destination` | Copy a file to a new location |
+| `mv file destination` | Move a file to a new location |
+| `mv oldname newname` | Rename a file or folder |
+| `rm filename` | Delete a file |
+| `rm -r foldername` | Delete a folder and everything inside it |
+
+---
+
+**NANO SHORTCUTS**
+
+| Shortcut | Definition |
+|----------|------------|
+| `CTRL + O` | Save file |
+| `CTRL + X` | Exit nano |
+| `CTRL + K` | Cut entire line |
+
+---
+
+**SEARCHING**
+
+| Command | Definition |
+|---------|------------|
+| `find . -name "*.txt"` | Find all .txt files from current directory down |
+| `find . -name "*.log"` | Find all .log files from current directory down |
+| `find . -type f` | Find every file regardless of extension |
+| `find logs -name "*.log"` | Search only inside a specific folder |
+| `grep "word" file` | Search inside one file for a word |
+| `grep -i "word" file` | Search inside one file, ignore case |
+| `find . -name "*.txt" \| xargs grep "word"` | Find files then search inside all of them |
+| `find . -type f \| xargs grep "word"` | Search every file for a word |
+
+---
+
+**PIPES & REDIRECTION**
+
+| Command | Definition |
+|---------|------------|
+| `\|` | Pipe — takes output of one command and feeds it into another |
+| `xargs` | Takes a list and feeds it one by one into another command |
+| `>` | Redirect output into a file instead of the screen |
+
+---
+
+**PERMISSIONS**
+
+| Command | Definition |
+|---------|------------|
+| `ls -l` | View permissions on files in long format |
+| `chmod u+r file` | Add read permission for owner |
+| `chmod u-r file` | Remove read permission from owner |
+| `chmod g+rw file` | Add read and write for group |
+| `chmod g-rwx file` | Remove all permissions from group |
+| `chmod o+r file` | Add read permission for others |
+| `chmod o-rwx file` | Remove all permissions from others |
+| `chmod a+x file` | Add execute permission for everyone |
+| `chmod g-rwx,o-rwx file` | Change multiple groups in one command |
+| `chmod 644 file` | Octal — owner rw, group r, others r |
+| `chmod 755 file` | Octal — owner rwx, group rx, others rx |
+| `chmod 600 file` | Octal — owner rw, everyone else nothing |
+| `chmod 700 file` | Octal — owner rwx, everyone else nothing |
+| `chown user:group file` | Change who owns a file and what group it belongs to |
+| `sudo command` | Run a command with root level privileges |
+
+---
+
+**PERMISSION SYMBOLS**
+
+| Symbol | Meaning |
+|--------|---------|
+| `r` | Read — value 4 |
+| `w` | Write — value 2 |
+| `x` | Execute — value 1 |
+| `-` | Permission not granted |
+| `u` | User — the owner |
+| `g` | Group |
+| `o` | Others — everyone else |
+| `a` | All — owner, group, and others |
+| `-` at start | It's a file |
+| `d` at start | It's a directory |
+
+---
+
+**PROCESSES**
+
+| Command | Definition |
+|---------|------------|
+| `ps` | Show processes in current terminal session |
+| `ps aux` | Show every process on the entire system |
+| `ps aux \| grep name` | Find a specific process by name |
+| `top` | Live updating process dashboard |
+| `kill PID` | Send SIGTERM — politely ask process to stop |
+| `kill -9 PID` | Send SIGKILL — forcibly destroy process immediately |
+| `kill PID1 PID2 PID3` | Kill multiple processes at once |
+| `killall name` | Kill every process with that name instantly |
+| `sleep 300` | Start a process that waits 300 seconds |
+| `command &` | Run any command in the background |
+
+---
+
+**KEY CONCEPTS**
+
+| Concept | Definition |
+|---------|------------|
+| PID | Process ID — unique number assigned to every running process |
+| Root | The most powerful user on the system — no restrictions |
+| Hidden files | Files starting with `.` — not shown by default |
+| Wildcard `*` | Matches anything — `*.txt` means any file ending in .txt |
+| Relative path | Location relative to where you are now |
+| Home directory | Your personal space — `/home/username` or `~` |
+| SIGTERM | Graceful termination signal |
+| SIGKILL | Forced termination — cannot be ignored |
+| Zombie process | A dead process not yet fully cleaned up |
+| Process isolation | Running things separately to contain potential damage |
+
+---
+
+That's your full command reference so far Giuseppe. Write it down, keep it next to your machine, and add to it every session.
+
+Ready for package management? 🎯
